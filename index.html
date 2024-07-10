@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Fridge App</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src='main.js'></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container-fluid text-center">
+    <h1 class="text-center m-5 guaraldo title"> myFridge  </h1>
+    <div class="row justify-content-center mt-5">
+
+      <div class="col-10 bg-white shadow-lg rounded board">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" id="general" aria-current="page" href="#"> <i class="fas fa-home"></i> </a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" id="inventory" href="#"><i class="fas fa-list-alt"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="scanner" href="#"><i class="fas fa-barcode"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="shopping" href="#"><i class="fas fa-shopping-basket"></i></a>
+          </li>
+        </ul>      
+
+        <div class="onglet" id="section1">
+          <h2 id="page-title">Général</h2>
+            <div class="row mt-5">
+                <div class="col-7 product-details">
+                  <span><b>Appareil Utilisé :</b> Showcase 4-Door French Door Refrigerator</span>
+                  <span><b>Garantie :</b> 3 ans</span>
+                  <span><b>Date d'achat :</b> 01/01/2024</span>
+                  <span><b>Lieu d'achat :</b> <img src="boulanger.png" width="50%"></span>
+              </div>
+              <div class="col-5 product-img">
+                  <img src="fridge.webp" width="100%">
+              </div>
+            </div>
+
+        </div>
+
+        <div class="onglet d-none" id="section2">
+          <div class="row justify-content-center">
+            <div class="col-1">
+
+            </div>
+            <div class="col-9 text-center">            
+              <h2 id="page-title">Frigo</h2>
+            </div>
+            <div class="col-1">            
+              <button class="btn btn-primary btnPX  rounded-circle p-3 lh-1" id="myBtn" type="button">
+                <i class="fas fa-plus"></i>
+              <span class="visually-hidden">Dismiss</span>
+            </button>
+          </div>
+          </div>
+
+          <div class="row mt-2">
+            <div class="scrollable">
+                <div class="product-details" style="display: flex;flex-direction: row;">
+                <div class="article shadow">
+                  <img src="yog.png" class="article-img" width="100%"/>
+                  
+                  <div class="article-body">
+                    <span class="fw-bold">Frommage Blanc</span>
+                    <span>15</span>
+                    <span>05/06/2025</span>
+                  </div>
+                </div>
+                <div class="article shadow">
+                  <img src="fruit.png" class="article-img" width="100%"/>
+                  
+                  <div class="article-body">
+                    <span class="fw-bold">Pommes</span>
+                    <span>15</span>
+                    <span>05/06/2025</span>
+                  </div>
+                </div>
+                <div class="article shadow">
+                  <img src="juice.png" class="article-img" width="100%"/>
+                  
+                  <div class="article-body">
+                    <span class="fw-bold">Jus Multifruits</span>
+                    <span>15</span>
+                    <span>05/06/2025</span>
+                  </div>
+                </div>
+                </div>
+                <div class="product-details" style="display: flex;flex-direction: row;">
+                  <div class="article shadow">
+                    <img src="meat.png" class="article-img" width="100%"/>
+                    
+                    <div class="article-body">
+                      <span class="fw-bold">Filet de Poulet</span>
+                      <span>15</span>
+                      <span>05/06/2025</span>
+                    </div>
+                  </div>
+                  <div class="article shadow">
+                    <img src="sauce.png" class="article-img" width="100%"/>
+                    
+                    <div class="article-body">
+                      <span class="fw-bold">Moutarde</span>
+                      <span>15</span>
+                      <span>05/06/2025</span>
+                    </div>
+                  </div>
+                  <div class="article shadow">
+                    <img src="veggies.png" class="article-img" width="100%"/>
+                    
+                    <div class="article-body">
+                      <span class="fw-bold">Tomates</span>
+                      <span>15</span>
+                      <span>05/06/2025</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-details" style="display: flex;flex-direction: row;">
+                  <div class="article shadow">
+                    <img src="meat.png" class="article-img" width="100%"/>
+                    
+                    <div class="article-body">
+                      <span class="fw-bold">Filet de Poulet</span>
+                      <span>15</span>
+                      <span>05/06/2025</span>
+                    </div>
+                  </div>
+                  <div class="article shadow">
+                    <img src="sauce.png" class="article-img" width="100%"/>
+                    
+                    <div class="article-body">
+                      <span class="fw-bold">Moutarde</span>
+                      <span>15</span>
+                      <span>05/06/2025</span>
+                    </div>
+                  </div>
+                  <div class="article shadow">
+                    <img src="veggies.png" class="article-img" width="100%"/>
+                    
+                    <div class="article-body">
+                      <span class="fw-bold">Tomates</span>
+                      <span>15</span>
+                      <span>05/06/2025</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          </div>
+        <div class="onglet d-none" id="section3">
+          <h2 id="page-title">Scanner Un Produit</h2>
+            <div class="col-12 mt-5">
+              <button class="btn rounded-pill btnPX1 p-4 lh-1" type="button">
+                <img src="scanner.png" width="30%">
+              <span class="visually-hidden">Dismiss</span>
+            </button>
+            </div>
+         </div>
+
+
+        
+        <div class="onglet d-none" id="section4">
+          <div class="row justify-content-center">
+            <div class="col-1">
+
+            </div>
+            <div class="col-9 text-center">            
+              <h2 id="page-title">Liste des Courses</h2>
+            </div>
+            <div class="col-1">            
+              <button class="btn btn-primary btnPX rounded-circle p-3 lh-1" id="myBtn" type="button">
+                <i class="fas fa-plus"></i>
+              <span class="visually-hidden">Dismiss</span>
+            </button>
+          </div>
+          </div>            <div class="row mt-5">
+                <div class="col-12 product-details">
+                  <table class="border-bottomPX table-sm">
+                    <thead class="">
+                      <tr class="the-stud">
+                        <th scope="row-5 the-stud border-rightPX ">Libelle</th>
+                        <th scope="row-5 the-stud">Quantite</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                  </table>
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 class="nexaB text-dark text-center ">AJOUTER UN PRODUIT</h3>
+      <div class="">
+        <div class="m-3 row">
+          <label for="staticEmail" class=" nexaB  col-sm-2 col-form-label">Libelle</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPassword">
+          </div>
+        </div>
+        <div class="m-3 row">
+          <label for="inputPassword" class=" nexaB col-sm-2 col-form-label">Stock</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="inputPassword">
+          </div>
+        </div>
+        <div class="m-3 row">
+          <label for="inputPassword" class=" nexaB col-sm-2 col-form-label">Peremption</label>
+          <div class="col-sm-10">
+            <input type="date" class="form-control" placeholder="06/06/2027" id="inputPassword">
+          </div>
+        </div>
+        <div class="m-3 row">
+          <label for="inputPassword" class=" nexaB col-sm-12 col-form-label">Type d'aliment</label>
+        </div>
+        
+          <div class="row justify-content-center text-center ">
+
+          <div class="col-12 justify-content-center">
+            <div class="form-check form-check-inline text-center choice shadow p-3 justify-content-center" id="choice1">
+              <label class="form-check-label text-center mt-2" for="exampleRadios1">
+                <img src="yog.png" class="article-img" width="100%"/> Laitages
+              </label>
+            </div>
+            <div class="form-check form-check-inline text-center choice shadow p-3  justify-content-center" id="choice2">
+              <label class="form-check-label text-center mt-2" for="exampleRadios1">
+                <img src="fruit.png" class="article-img" width="100%"/> Fruits
+              </label>
+            </div>
+            <div class="form-check form-check-inline text-center choice shadow p-3  justify-content-center" id="choice3">
+              <label class="form-check-label text-center mt-2" for="exampleRadios1">
+                <img src="juice.png" class="article-img" width="100%"/> Jus
+              </label>
+            </div>
+            <div class="form-check form-check-inline text-center choice shadow p-3  justify-content-center" id="choice4">
+              <label class="form-check-label text-center mt-2" for="exampleRadios1">
+                <img src="meat.png" class="article-img" width="100%"/> Viandes
+              </label>
+            </div>
+            <div class="form-check form-check-inline text-center choice shadow p-3  justify-content-center" id="choice5">
+              <label class="form-check-label text-center mt-2" for="exampleRadios1">
+                <img src="sauce.png" class="article-img" width="100%"/> Sauces
+              </label>
+            </div>
+            <div class="form-check mt-3 form-check-inline choice shadow p-3  text-center justify-content-center" id="choice6">
+              <label class="form-check-label text-center mt-2" for="exampleRadios1">
+                <img src="veggies.png" class="article-img" width="100%"/> Légumes
+              </label> 
+            </div>
+              </div>
+        </div>
+
+      </div>
+    </div>
+  
+  </div>
+
+
+</body>
+<script>
+
+document.getElementById('choice1').addEventListener('click', function(e) {
+
+  document.getElementById('choice1').style.backgroundColor = "lightgreen" ;
+  document.getElementById('choice2').style.backgroundColor = "white" ;
+  document.getElementById('choice3').style.backgroundColor = "white" ;
+  document.getElementById('choice4').style.backgroundColor = "white" ;
+  document.getElementById('choice5').style.backgroundColor = "white" ;
+  document.getElementById('choice6').style.backgroundColor = "white" ;
+
+});
+
+document.getElementById('choice2').addEventListener('click', function(e) {
+
+  document.getElementById('choice2').style.backgroundColor = "lightgreen" ;
+  document.getElementById('choice1').style.backgroundColor = "white" ;
+  document.getElementById('choice3').style.backgroundColor = "white" ;
+  document.getElementById('choice4').style.backgroundColor = "white" ;
+  document.getElementById('choice5').style.backgroundColor = "white" ;
+  document.getElementById('choice6').style.backgroundColor = "white" ;
+});
+
+document.getElementById('choice3').addEventListener('click', function(e) {
+
+  document.getElementById('choice3').style.backgroundColor = "lightgreen" ;
+  document.getElementById('choice2').style.backgroundColor = "white" ;
+  document.getElementById('choice1').style.backgroundColor = "white" ;
+  document.getElementById('choice4').style.backgroundColor = "white" ;
+  document.getElementById('choice5').style.backgroundColor = "white" ;
+  document.getElementById('choice6').style.backgroundColor = "white" ;
+});
+
+document.getElementById('choice4').addEventListener('click', function(e) {
+
+  document.getElementById('choice4').style.backgroundColor = "lightgreen" ;
+  document.getElementById('choice2').style.backgroundColor = "white" ;
+  document.getElementById('choice3').style.backgroundColor = "white" ;
+  document.getElementById('choice1').style.backgroundColor = "white" ;
+  document.getElementById('choice2').style.backgroundColor = "white" ;
+  document.getElementById('choice5').style.backgroundColor = "white" ;
+  document.getElementById('choice6').style.backgroundColor = "white" ;
+});
+
+document.getElementById('choice5').addEventListener('click', function(e) {
+
+document.getElementById('choice5').style.backgroundColor = "lightgreen" ;
+document.getElementById('choice2').style.backgroundColor = "white" ;
+document.getElementById('choice3').style.backgroundColor = "white" ;
+document.getElementById('choice1').style.backgroundColor = "white" ;
+document.getElementById('choice4').style.backgroundColor = "white" ;
+document.getElementById('choice6').style.backgroundColor = "white" ;
+});
+
+document.getElementById('choice6').addEventListener('click', function(e) {
+
+document.getElementById('choice6').style.backgroundColor = "lightgreen" ;
+document.getElementById('choice2').style.backgroundColor = "white" ;
+document.getElementById('choice3').style.backgroundColor = "white" ;
+document.getElementById('choice1').style.backgroundColor = "white" ;
+document.getElementById('choice4').style.backgroundColor = "white" ;
+document.getElementById('choice5').style.backgroundColor = "white" ;
+
+});
+
+document.getElementById('general').addEventListener('click', function(e) {
+
+  e.preventDefault();
+
+  document.getElementById('inventory').classList.remove('active') ;
+  document.getElementById('scanner').classList.remove('active') ;
+  document.getElementById('shopping').classList.remove('active') ;
+  document.getElementById('general').classList.add('active') ;
+
+  document.getElementById('section1').classList.remove('d-none') ;
+  document.getElementById('section2').classList.add('d-none') ;
+  document.getElementById('section3').classList.add('d-none') ;
+  document.getElementById('section4').classList.add('d-none') ;
+
+});
+
+document.getElementById('inventory').addEventListener('click', function(e) {
+
+  e.preventDefault();
+
+  document.getElementById('inventory').classList.add('active') ;
+  document.getElementById('shopping').classList.remove('active') ;
+  document.getElementById('scanner').classList.remove('active') ;
+  document.getElementById('general').classList.remove('active') ;
+
+  document.getElementById('section1').classList.add('d-none') ;
+  document.getElementById('section2').classList.remove('d-none') ;
+  document.getElementById('section3').classList.add('d-none') ;
+  document.getElementById('section4').classList.add('d-none') ;
+
+});
+
+document.getElementById('scanner').addEventListener('click', function(e) {
+
+  e.preventDefault();
+
+  document.getElementById('inventory').classList.remove('active') ;
+  document.getElementById('shopping').classList.remove('active') ;
+  document.getElementById('scanner').classList.add('active') ;
+  document.getElementById('general').classList.remove('active') ;
+
+  document.getElementById('section1').classList.add('d-none') ;
+  document.getElementById('section2').classList.add('d-none') ;
+  document.getElementById('section3').classList.remove('d-none') ;
+  document.getElementById('section4').classList.add('d-none') ;
+
+});
+
+document.getElementById('shopping').addEventListener('click', function(e) {
+
+  e.preventDefault();
+
+  document.getElementById('inventory').classList.remove('active') ;
+  document.getElementById('shopping').classList.add('active') ;
+  document.getElementById('scanner').classList.remove('active') ;
+  document.getElementById('general').classList.remove('active') ;
+
+  document.getElementById('section1').classList.add('d-none') ;
+  document.getElementById('section2').classList.add('d-none') ;
+  document.getElementById('section3').classList.add('d-none') ;
+  document.getElementById('section4').classList.remove('d-none') ;
+
+});
+
+// Get the modal element
+const modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+const btn = document.getElementById('myBtn');
+
+// Get the <span> element that closes the modal
+const span = document.getElementsByClassName('close')[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = 'block';
+};
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = 'none';
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+};
+
+
+
+</script>
+</html>
